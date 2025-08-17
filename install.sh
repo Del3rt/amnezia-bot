@@ -2,8 +2,8 @@
 
 # Конфигурация
 SERVICE_NAME="awg_bot"
-REPO_URL="https://github.com/stevefoxru/amnezia-bot"
-REPO_API="https://api.github.com/repos/stevefoxru/amnezia-bot"
+REPO_URL=https://github.com/Del3rt/amnezia-bot"
+REPO_API="https://api.github.com/repos/Del3rt/amnezia-bot"
 LOCAL_VERSION_FILE="/root/amnezia-bot/.version"
 
 # Цвета для вывода
@@ -64,7 +64,7 @@ check_github_updates() {
     
     # Получение последнего коммита через GitHub API
     if command -v curl &>/dev/null; then
-        latest_sha=$(curl -s "$REPO_API/commits/main" | jq -r '.sha' 2>/dev/null)
+        latest_sha=$(curl -s "$REPO_API/commits/patch-1" | jq -r '.sha' 2>/dev/null)
         [[ -z "$latest_sha" ]] && { echo -e "${RED}Не удалось получить данные с GitHub${NC}"; cd ..; return 1; }
     else
         echo -e "${RED}curl не установлен${NC}"; cd ..; return 1
