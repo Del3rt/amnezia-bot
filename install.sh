@@ -2,7 +2,7 @@
 
 # Конфигурация
 SERVICE_NAME="awg_bot"
-REPO_URL="https://github.com/stevefoxru/amnezia-bot.git"
+REPO_URL="https://github.com/stevefoxru/amnezia-bot"
 REPO_API="https://api.github.com/repos/stevefoxru/amnezia-bot"
 LOCAL_VERSION_FILE="/root/amnezia-bot/.version"
 
